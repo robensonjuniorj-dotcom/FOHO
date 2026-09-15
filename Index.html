@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOHO — Fondation Haïtienne</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #fff;
+    }
+
+    header {
+      background: #0b5d3b;
+      color: white;
+      padding: 18px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 6px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0b5d3b, #159a62);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 8vw, 75px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: #f4b400;
+      color: #111;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 7%;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #0b5d3b;
+      margin-bottom: 30px;
+      font-size: 34px;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .stats,
+    .cards,
+    .projects,
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card,
+    .stat,
+    .project {
+      padding: 25px;
+      border-radius: 12px;
+      background: #f5f7f6;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 34px;
+      color: #0b5d3b;
+    }
+
+    .gallery div {
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #dce9e3;
+      border-radius: 10px;
+      color: #0b5d3b;
+      font-weight: bold;
+    }
+
+    .don {
+      background: #0b5d3b;
+      color: white;
+      text-align: center;
+    }
+
+    .don h2 {
+      color: white;
+    }
+
+    form {
+      max-width: 650px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 14px;
+      border: none;
+      border-radius: 7px;
+      background: #0b5d3b;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #063b27;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">FOHO</div>
+
+    <div>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#domaines">Domaines</a>
+      <a href="#projets">Projets</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#actualites">Actualités</a>
+      <a href="#don">Don</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="accueil">
+  <div>
+    <h1>FOHO</h1>
+    <p>
+      Fondation engagée pour accompagner les personnes,
+      les familles et les communautés en Haïti.
+    </p>
+    <a class="btn" href="#don">Soutenir FOHO</a>
+  </div>
+</section>
+
+<section id="apropos">
+  <h2>À propos de FOHO</h2>
+
+  <p class="intro">
+    FOHO œuvre pour contribuer au développement et au bien-être
+    des communautés haïtiennes à travers des actions sociales,
+    éducatives et humanitaires.
+  </p>
+
+  <div class="stats" style="margin-top:35px;">
+    <div class="stat">
+      <strong>1 500+</strong>
+      personnes et familles aidées
+    </div>
+
+    <div class="stat">
+      <strong>21</strong>
+      septembre — date de fondation
+    </div>
+
+    <div class="stat">
+      <strong>FOHO</strong>
+      Engagement et solidarité
+    </div>
+  </div>
+</section>
+
+<section id="domaines">
+  <h2>Nos domaines</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Éducation</h3>
+      <p>Accompagnement et soutien aux initiatives éducatives.</p>
+    </div>
+
+    <div class="card">
+      <h3>Action sociale</h3>
+      <p>Soutien aux personnes et familles vulnérables.</p>
+    </div>
+
+    <div class="card">
+      <h3>Développement</h3>
+      <p>Initiatives pour renforcer les communautés locales.</p>
+    </div>
+
+    <div class="card">
+      <h3>Humanitaire</h3>
+      <p>Actions de solidarité pour répondre aux besoins urgents.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <h2>Nos projets</h2>
+
+  <div class="projects">
+    <div class="project">
+      <h3>Projet communautaire</h3>
+      <p>Des actions destinées à améliorer les conditions de vie.</p>
+    </div>
+
+    <div class="project">
+      <h3>Projet éducatif</h3>
+      <p>Des initiatives pour accompagner les jeunes et les familles.</p>
+    </div>
+
+    <div class="project">
+      <h3>Projet humanitaire</h3>
+      <p>Une réponse solidaire aux besoins des communautés.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <h2>Galerie</h2>
+
+  <div class="gallery">
+    <div>Photo FOHO 1</div>
+    <div>Photo FOHO 2</div>
+    <div>Photo FOHO 3</div>
+    <div>Photo FOHO 4</div>
+    <div>Photo FOHO 5</div>
+    <div>Photo FOHO 6</div>
+    <div>Photo FOHO 7</div>
+    <div>Photo FOHO 8</div>
+    <div>Photo FOHO 9</div>
+    <div>Photo FOHO 10</div>
+  </div>
+</section>
+
+<section id="actualites">
+  <h2>Actualités</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Bienvenue sur le site de FOHO</h3>
+      <p>
+        Retrouvez ici les nouvelles activités et initiatives
+        de notre organisation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Nos prochaines activités</h3>
+      <p>
+        Cette section sera mise à jour avec les nouvelles activités.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="don" id="don">
+  <h2>Faire un don</h2>
+
+  <p>
+    Votre soutien permet à FOHO de continuer ses actions
+    auprès des personnes et des familles.
+  </p>
+
+  <a class="btn" href="#contact">Nous contacter</a>
+</section>
+
+<section id="contact">
+  <h2>Nous contacter</h2>
+
+  <form>
+    <input type="text" placeholder="Votre nom">
+
+    <input type="email" placeholder="Votre adresse e-mail">
+
+    <textarea rows="6" placeholder="Votre message"></textarea>
+
+    <button type="button">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 FOHO — Tous droits réservés.</p>
+  <p>Fondation engagée pour les communautés en Haïti.</p>
+</footer>
+
+</body>
+</html>
