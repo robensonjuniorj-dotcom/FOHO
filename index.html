@@ -3,15 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>FOHO - Fondation Haïtienne</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
   font-family:Arial,sans-serif;
@@ -126,16 +121,13 @@ section h2{
   font-size:18px;
 }
 
-.cards,
-.stats,
-.gallery{
+.cards,.stats,.gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
 
-.card,
-.stat{
+.card,.stat{
   padding:25px;
   border-radius:12px;
   background:#f5f7f6;
@@ -195,6 +187,53 @@ section h2{
   color:#0b5d3b;
   font-weight:bold;
   text-decoration:none;
+}
+
+.social{
+  background:#eef6f1;
+  text-align:center;
+}
+
+.social-box{
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.like-btn,
+.share-btn{
+  border:none;
+  padding:14px 24px;
+  border-radius:8px;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.like-btn{
+  background:#fff;
+  color:#0b5d3b;
+  border:2px solid #0b5d3b;
+}
+
+.like-btn.liked{
+  background:#0b5d3b;
+  color:#fff;
+}
+
+.share-btn{
+  background:#f4b400;
+  color:#111;
+}
+
+.like-count{
+  font-weight:bold;
+  color:#0b5d3b;
+  margin-top:15px;
 }
 
 footer{
@@ -296,9 +335,7 @@ et les familles dans le besoin.
 <strong>« Faisons la Route ensemble »</strong>
 </p>
 
-<a class="btn" href="#don">
-Soutenir FOHO
-</a>
+<a class="btn" href="#don">Soutenir FOHO</a>
 
 </div>
 
@@ -396,44 +433,32 @@ année de fondation
 
 <div class="card">
 <h3>Éducation</h3>
-<p>
-Soutien aux enfants et aux familles dans le domaine de l'éducation.
-</p>
+<p>Soutien aux enfants et aux familles dans le domaine de l'éducation.</p>
 </div>
 
 <div class="card">
 <h3>Alimentation</h3>
-<p>
-Aide alimentaire aux personnes et familles dans le besoin.
-</p>
+<p>Aide alimentaire aux personnes et familles dans le besoin.</p>
 </div>
 
 <div class="card">
 <h3>Logement</h3>
-<p>
-Contribution et soutien aux personnes qui construisent leur maison.
-</p>
+<p>Contribution et soutien aux personnes qui construisent leur maison.</p>
 </div>
 
 <div class="card">
 <h3>Environnement</h3>
-<p>
-Actions et initiatives en faveur de la protection de l'environnement.
-</p>
+<p>Actions et initiatives en faveur de la protection de l'environnement.</p>
 </div>
 
 <div class="card">
 <h3>Bourses</h3>
-<p>
-Soutien aux jeunes grâce aux possibilités de bourses.
-</p>
+<p>Soutien aux jeunes grâce aux possibilités de bourses.</p>
 </div>
 
 <div class="card">
 <h3>Catastrophes naturelles</h3>
-<p>
-Soutien aux personnes touchées après les catastrophes naturelles.
-</p>
+<p>Soutien aux personnes touchées après les catastrophes naturelles.</p>
 </div>
 
 </div>
@@ -474,49 +499,17 @@ Soutien aux personnes touchées après les catastrophes naturelles.
 
 <div class="gallery">
 
-<div>
-<img src="20260907_182624.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0018.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0020.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0021.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0023.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0024.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0025.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0026.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0027.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260913-WA0029.jpg" alt="Activité FOHO">
-</div>
-
-<div>
-<img src="IMG-20260914-WA0004.jpg" alt="Activité FOHO">
-</div>
+<div><img src="20260907_182624.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0018.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0020.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0021.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0023.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0024.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0025.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0026.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0027.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260913-WA0029.jpg" alt="Activité FOHO"></div>
+<div><img src="IMG-20260914-WA0004.jpg" alt="Activité FOHO"></div>
 
 </div>
 
@@ -545,7 +538,7 @@ Natcash :<br>
 
 <div>
 Moncash :<br>
-+509 43 38 9142
++509 3944 0978
 </div>
 
 <div>
@@ -558,15 +551,36 @@ Zelle :<br>
 </section>
 
 
+<section class="social">
+
+<h2>Votre avis compte</h2>
+
+<div class="social-box">
+
+<button class="like-btn" id="likeBtn" onclick="likeSite()">
+❤️ J’aime
+</button>
+
+<button class="share-btn" onclick="shareSite()">
+📤 Partager
+</button>
+
+</div>
+
+<div class="like-count">
+❤️ J’aime : <span id="likeCount">0</span>
+</div>
+
+</section>
+
+
 <section id="contact" class="contact">
 
 <h2>Nous contacter</h2>
 
 <div class="intro">
 
-<p>
-<strong>WhatsApp / Téléphone</strong>
-</p>
+<p><strong>WhatsApp / Téléphone</strong></p>
 
 <p>
 <a href="https://wa.me/50939440978">
@@ -574,11 +588,15 @@ Zelle :<br>
 </a>
 </p>
 
+<p>
+<a href="https://wa.me/50941851160">
++509 4185 1160
+</a>
+</p>
+
 <br>
 
-<p>
-<strong>Email</strong>
-</p>
+<p><strong>Email</strong></p>
 
 <p>
 <a href="mailto:fruitofhopeorganization49@gmail.com">
@@ -603,15 +621,81 @@ FOHO — Fondation engagée pour les communautés haïtiennes.
 
 <footer>
 
-<p>
-© 2026 FOHO — Tous droits réservés.
-</p>
+<p>© 2026 FOHO — Tous droits réservés.</p>
 
-<p>
-« Faisons la Route ensemble »
-</p>
+<p>« Faisons la Route ensemble »</p>
 
 </footer>
+
+
+<script>
+
+function likeSite(){
+
+  const countElement = document.getElementById("likeCount");
+  const button = document.getElementById("likeBtn");
+
+  let count = parseInt(localStorage.getItem("fohoLikes") || "0");
+
+  if(localStorage.getItem("fohoUserLiked") !== "true"){
+
+    count++;
+    localStorage.setItem("fohoLikes", count);
+    localStorage.setItem("fohoUserLiked", "true");
+
+    button.classList.add("liked");
+    button.innerHTML = "❤️ J’aime déjà";
+
+  }
+
+  countElement.innerText = count;
+}
+
+
+function loadLikes(){
+
+  const count = localStorage.getItem("fohoLikes") || "0";
+
+  document.getElementById("likeCount").innerText = count;
+
+  if(localStorage.getItem("fohoUserLiked") === "true"){
+
+    const button = document.getElementById("likeBtn");
+
+    button.classList.add("liked");
+    button.innerHTML = "❤️ J’aime déjà";
+
+  }
+
+}
+
+
+function shareSite(){
+
+  const shareData = {
+    title:"FOHO - Fondation Haïtienne",
+    text:"Découvrez FOHO — Fondation Haïtienne. Faisons la Route ensemble.",
+    url:"https://robensonjuniorj-dotcom.github.io/FOHO/"
+  };
+
+  if(navigator.share){
+
+    navigator.share(shareData);
+
+  }else{
+
+    navigator.clipboard.writeText(shareData.url);
+
+    alert("Lien FOHO copié. Vous pouvez maintenant le partager.");
+
+  }
+
+}
+
+
+loadLikes();
+
+</script>
 
 </body>
 </html>
