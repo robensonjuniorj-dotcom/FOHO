@@ -2,49 +2,271 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FOHO - Fondation Haïtienne</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
-header{background:#0b5d3b;color:#fff;padding:18px 6%;position:sticky;top:0;z-index:10}
-nav{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
-.logo{font-size:28px;font-weight:bold}
-nav a{color:#fff;text-decoration:none;margin:5px;font-weight:bold}
-.hero{min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;background:linear-gradient(135deg,#0b5d3b,#159a62);color:#fff}
-.hero h1{font-size:clamp(42px,8vw,75px);margin-bottom:15px}
-.hero p{font-size:21px;max-width:750px;margin:auto}
-.btn{display:inline-block;margin-top:25px;padding:13px 25px;background:#f4b400;color:#111;text-decoration:none;border-radius:7px;font-weight:bold}
-section{padding:65px 7%}
-section h2{text-align:center;color:#0b5d3b;margin-bottom:30px;font-size:34px}
-.intro{max-width:850px;margin:auto;text-align:center;font-size:18px}
-.cards,.stats,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card,.stat{padding:25px;border-radius:12px;background:#f5f7f6;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.08)}
-.card h3{color:#0b5d3b;margin-bottom:10px}
-.stat strong{display:block;font-size:35px;color:#0b5d3b}
-.gallery div{overflow:hidden;border-radius:12px;background:#dce9e3}
-.gallery img{width:100%;height:250px;object-fit:cover;display:block}
-.donation{background:#f5f7f6;text-align:center}
-.money{max-width:600px;margin:auto;display:grid;gap:15px}
-.money div{background:#fff;padding:18px;border-radius:10px;font-size:20px;font-weight:bold}
-.contact{text-align:center}
-.contact a{color:#0b5d3b;font-weight:bold;text-decoration:none}
-footer{background:#0b5d3b;color:#fff;text-align:center;padding:30px 15px}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  line-height:1.6;
+  color:#222;
+  background:#fff;
+}
+
+header{
+  background:#0b5d3b;
+  color:#fff;
+  padding:12px 6%;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:bold;
+}
+
+.logo img{
+  width:62px;
+  height:62px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+  display:block;
+}
+
+.logo-text h1{
+  font-size:28px;
+  line-height:1.1;
+}
+
+.logo-text p{
+  font-size:16px;
+  line-height:1.2;
+}
+
+.logo-text small{
+  font-size:13px;
+  font-style:italic;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin:5px;
+  font-weight:bold;
+}
+
+.hero{
+  min-height:520px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:60px 20px;
+  background:linear-gradient(135deg,#0b5d3b,#159a62);
+  color:#fff;
+}
+
+.hero h1{
+  font-size:clamp(42px,8vw,75px);
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:21px;
+  max-width:750px;
+  margin:auto;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:13px 25px;
+  background:#f4b400;
+  color:#111;
+  text-decoration:none;
+  border-radius:7px;
+  font-weight:bold;
+}
+
+section{
+  padding:65px 7%;
+}
+
+section h2{
+  text-align:center;
+  color:#0b5d3b;
+  margin-bottom:30px;
+  font-size:34px;
+}
+
+.intro{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+}
+
+.cards,
+.stats,
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card,
+.stat{
+  padding:25px;
+  border-radius:12px;
+  background:#f5f7f6;
+  text-align:center;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.card h3{
+  color:#0b5d3b;
+  margin-bottom:10px;
+}
+
+.stat strong{
+  display:block;
+  font-size:35px;
+  color:#0b5d3b;
+}
+
+.gallery div{
+  overflow:hidden;
+  border-radius:12px;
+  background:#dce9e3;
+}
+
+.gallery img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  display:block;
+}
+
+.donation{
+  background:#f5f7f6;
+  text-align:center;
+}
+
+.money{
+  max-width:600px;
+  margin:auto;
+  display:grid;
+  gap:15px;
+}
+
+.money div{
+  background:#fff;
+  padding:18px;
+  border-radius:10px;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.contact{
+  text-align:center;
+}
+
+.contact a{
+  color:#0b5d3b;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+footer{
+  background:#0b5d3b;
+  color:#fff;
+  text-align:center;
+  padding:30px 15px;
+}
+
 @media(max-width:600px){
-header{padding:15px 4%}
-nav{justify-content:center}
-nav a{font-size:14px}
-section{padding:50px 5%}
-.gallery{grid-template-columns:1fr}
-.gallery img{height:230px}
+
+  header{
+    padding:10px 4%;
+  }
+
+  nav{
+    justify-content:center;
+  }
+
+  nav a{
+    font-size:14px;
+  }
+
+  .logo img{
+    width:55px;
+    height:55px;
+  }
+
+  .logo-text h1{
+    font-size:24px;
+  }
+
+  .logo-text p{
+    font-size:14px;
+  }
+
+  .logo-text small{
+    font-size:11px;
+  }
+
+  section{
+    padding:50px 5%;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .gallery img{
+    height:230px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
 <nav>
-<div class="logo">FOHO</div>
+
+<div class="logo">
+
+<img src="20260907_182624.jpg" alt="Logo officiel FOHO">
+
+<div class="logo-text">
+<h1>FOHO</h1>
+<p>Fondation Haïtienne</p>
+<small>Faisons la Route ensemble</small>
+</div>
+
+</div>
+
 <div>
 <a href="#accueil">Accueil</a>
 <a href="#apropos">À propos</a>
@@ -54,113 +276,341 @@ section{padding:50px 5%}
 <a href="#don">Don</a>
 <a href="#contact">Contact</a>
 </div>
+
 </nav>
 </header>
 
+
 <section class="hero" id="accueil">
+
 <div>
+
 <h1>FOHO</h1>
-<p>Fondation engagée pour aider les personnes et les familles dans le besoin.</p>
-<p><strong>« Faisons la Route ensemble »</strong></p>
-<a class="btn" href="#don">Soutenir FOHO</a>
+
+<p>
+Fondation engagée pour aider les personnes
+et les familles dans le besoin.
+</p>
+
+<p>
+<strong>« Faisons la Route ensemble »</strong>
+</p>
+
+<a class="btn" href="#don">
+Soutenir FOHO
+</a>
+
 </div>
+
 </section>
+
 
 <section id="apropos">
+
 <h2>À propos de FOHO</h2>
+
 <div class="intro">
-<p>FOHO a été fondée le <strong>21 septembre 2024</strong> par <strong>M. JEPHTHE PIERRE</strong>.</p>
+
+<p>
+FOHO a été fondée le
+<strong>21 septembre 2024</strong>
+par <strong>M. JEPHTHE PIERRE</strong>.
+</p>
+
 <br>
-<p>La fondation est née de la volonté de venir en aide aux personnes dans le besoin, particulièrement les plus vulnérables.</p>
+
+<p>
+La fondation est née de la volonté de venir en aide
+aux personnes dans le besoin, particulièrement les plus vulnérables.
+</p>
+
 <br>
-<p>Le fondateur a constaté que beaucoup de personnes sont dans le besoin et a voulu agir pour leur apporter son aide. FOHO est également née d'une réflexion importante : au lieu de demander seulement ce que le pays peut faire pour nous, nous devons aussi nous demander ce que nous pouvons faire pour contribuer au développement de notre pays.</p>
+
+<p>
+Le fondateur a constaté que beaucoup de personnes
+sont dans le besoin et a voulu agir pour leur apporter son aide.
+FOHO est également née d'une réflexion importante :
+au lieu de demander seulement ce que le pays peut faire pour nous,
+nous devons aussi nous demander ce que nous pouvons faire
+pour contribuer au développement de notre pays.
+</p>
+
 <br>
-<p>Depuis sa création, FOHO travaille pour améliorer les conditions de vie des personnes et des familles dans le besoin.</p>
+
+<p>
+Depuis sa création, FOHO travaille pour améliorer
+les conditions de vie des personnes et des familles dans le besoin.
+</p>
+
 </div>
+
 </section>
+
 
 <section>
+
 <h2>Notre vision</h2>
+
 <div class="intro">
-<p><strong>Aider davantage de personnes chaque jour.</strong></p>
+
+<p>
+<strong>Aider davantage de personnes chaque jour.</strong>
+</p>
+
 <br>
-<p>FOHO souhaite continuer à grandir afin d'apporter son soutien à un plus grand nombre de personnes et de familles.</p>
+
+<p>
+FOHO souhaite continuer à grandir afin d'apporter
+son soutien à un plus grand nombre de personnes et de familles.
+</p>
+
 </div>
+
 <div class="stats" style="margin-top:35px">
-<div class="stat"><strong>1 500+</strong>personnes et familles aidées</div>
-<div class="stat"><strong>3</strong>zones d'intervention</div>
-<div class="stat"><strong>2024</strong>année de fondation</div>
+
+<div class="stat">
+<strong>1 500+</strong>
+personnes et familles aidées
 </div>
+
+<div class="stat">
+<strong>3</strong>
+zones d'intervention
+</div>
+
+<div class="stat">
+<strong>2024</strong>
+année de fondation
+</div>
+
+</div>
+
 </section>
+
 
 <section id="actions">
+
 <h2>Nos domaines d'action</h2>
+
 <div class="cards">
-<div class="card"><h3>Éducation</h3><p>Soutien aux enfants et aux familles dans le domaine de l'éducation.</p></div>
-<div class="card"><h3>Alimentation</h3><p>Aide alimentaire aux personnes et familles dans le besoin.</p></div>
-<div class="card"><h3>Logement</h3><p>Contribution et soutien aux personnes qui construisent leur maison.</p></div>
-<div class="card"><h3>Environnement</h3><p>Actions et initiatives en faveur de la protection de l'environnement.</p></div>
-<div class="card"><h3>Bourses</h3><p>Soutien aux jeunes grâce aux possibilités de bourses.</p></div>
-<div class="card"><h3>Catastrophes naturelles</h3><p>Soutien aux personnes touchées après les catastrophes naturelles.</p></div>
+
+<div class="card">
+<h3>Éducation</h3>
+<p>
+Soutien aux enfants et aux familles dans le domaine de l'éducation.
+</p>
 </div>
+
+<div class="card">
+<h3>Alimentation</h3>
+<p>
+Aide alimentaire aux personnes et familles dans le besoin.
+</p>
+</div>
+
+<div class="card">
+<h3>Logement</h3>
+<p>
+Contribution et soutien aux personnes qui construisent leur maison.
+</p>
+</div>
+
+<div class="card">
+<h3>Environnement</h3>
+<p>
+Actions et initiatives en faveur de la protection de l'environnement.
+</p>
+</div>
+
+<div class="card">
+<h3>Bourses</h3>
+<p>
+Soutien aux jeunes grâce aux possibilités de bourses.
+</p>
+</div>
+
+<div class="card">
+<h3>Catastrophes naturelles</h3>
+<p>
+Soutien aux personnes touchées après les catastrophes naturelles.
+</p>
+</div>
+
+</div>
+
 </section>
+
 
 <section id="zones">
+
 <h2>Nos zones d'intervention</h2>
+
 <div class="cards">
-<div class="card"><h3>Trou-du-Nord</h3><p>Rue Saint-Jean</p><p><strong>Adresse principale</strong></p></div>
-<div class="card"><h3>Port-au-Prince</h3><p>Zone d'intervention de FOHO</p></div>
-<div class="card"><h3>Limbé</h3><p>Zone d'intervention de FOHO</p></div>
+
+<div class="card">
+<h3>Trou-du-Nord</h3>
+<p>Rue Saint-Jean</p>
+<p><strong>Adresse principale</strong></p>
 </div>
+
+<div class="card">
+<h3>Port-au-Prince</h3>
+<p>Zone d'intervention de FOHO</p>
+</div>
+
+<div class="card">
+<h3>Limbé</h3>
+<p>Zone d'intervention de FOHO</p>
+</div>
+
+</div>
+
 </section>
+
 
 <section id="galerie">
+
 <h2>Galerie</h2>
+
 <div class="gallery">
-<div><img src="20260907_182624.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0018.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0020.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0021.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0023.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0024.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0025.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0026.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0027.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260913-WA0029.jpg" alt="Activité FOHO"></div>
-<div><img src="IMG-20260914-WA0004.jpg" alt="Activité FOHO"></div>
+
+<div>
+<img src="20260907_182624.jpg" alt="Activité FOHO">
 </div>
+
+<div>
+<img src="IMG-20260913-WA0018.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0020.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0021.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0023.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0024.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0025.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0026.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0027.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260913-WA0029.jpg" alt="Activité FOHO">
+</div>
+
+<div>
+<img src="IMG-20260914-WA0004.jpg" alt="Activité FOHO">
+</div>
+
+</div>
+
 </section>
+
 
 <section id="don" class="donation">
+
 <h2>Don / Soutenir FOHO</h2>
+
 <div class="intro">
-<p>Votre soutien permet à FOHO de continuer sa mission auprès des personnes et des familles dans le besoin.</p>
+
+<p>
+Votre soutien permet à FOHO de continuer sa mission
+auprès des personnes et des familles dans le besoin.
+</p>
+
 </div>
+
 <div class="money" style="margin-top:30px">
-<div>Natcash :<br>+509 43 38 9142</div>
-<div>Moncash :<br>+509 43 38 9142</div>
-<div>Zelle :<br>+1 317 339 8348</div>
+
+<div>
+Natcash :<br>
++509 43 38 9142
 </div>
+
+<div>
+Moncash :<br>
++509 43 38 9142
+</div>
+
+<div>
+Zelle :<br>
++1 317 339 8348
+</div>
+
+</div>
+
 </section>
+
 
 <section id="contact" class="contact">
+
 <h2>Nous contacter</h2>
+
 <div class="intro">
-<p><strong>WhatsApp / Téléphone</strong></p>
-<p><a href="https://wa.me/50939440978">+509 3944 0978</a></p>
-<p><a href="https://wa.me/50941851160">+509 4185 1160</a></p>
+
+<p>
+<strong>WhatsApp / Téléphone</strong>
+</p>
+
+<p>
+<a href="https://wa.me/50939440978">
++509 39440978
+</a>
+</p>
+
 <br>
-<p><strong>Email</strong></p>
-<p><a href="mailto:fruitofhopeorganization49@gmail.com">fruitofhopeorganization49@gmail.com</a></p>
+
+<p>
+<strong>Email</strong>
+</p>
+
+<p>
+<a href="mailto:fruitofhopeorganization49@gmail.com">
+fruitofhopeorganization49@gmail.com
+</a>
+</p>
+
 <br>
-<p>FOHO — Fondation engagée pour les communautés haïtiennes.</p>
-<p><strong>« Faisons la Route ensemble »</strong></p>
+
+<p>
+FOHO — Fondation engagée pour les communautés haïtiennes.
+</p>
+
+<p>
+<strong>« Faisons la Route ensemble »</strong>
+</p>
+
 </div>
+
 </section>
 
+
 <footer>
-<p>© 2026 FOHO — Tous droits réservés.</p>
-<p>« Faisons la Route ensemble »</p>
+
+<p>
+© 2026 FOHO — Tous droits réservés.
+</p>
+
+<p>
+« Faisons la Route ensemble »
+</p>
+
 </footer>
 
 </body>
